@@ -3,41 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-
-    <!-- PWA / Theme -->
     <meta name="theme-color" content="#0d1b2e" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="MeshLink" />
-
-    <!-- SEO -->
-    <meta name="description" content="MeshLink — Hybrid LoRa + Internet Messenger. Works offline, works everywhere." />
-    <meta name="keywords" content="LoRa, mesh, offline, messenger, ESP32, PWA" />
-
-    <!-- Open Graph -->
+    <meta name="description" content="MeshLink — Hybrid LoRa + Internet Messenger." />
     <meta property="og:title" content="MeshLink" />
-    <meta property="og:description" content="Hybrid Offline / Online Messenger powered by LoRa & ESP32" />
     <meta property="og:type" content="website" />
-
-    <!-- Icons -->
-    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./icon-192.svg" />
-    <link rel="apple-touch-icon" sizes="192x192" href="./icon-192.svg" />
-    <link rel="apple-touch-icon" sizes="512x512" href="./icon-512.svg" />
-
-    <!-- Manifest -->
-    <link rel="manifest" href="./manifest.json" />
-
-    <!-- Splash screens (iOS) -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
+    <link rel="icon" type="image/svg+xml" href__="./icon.svg" />
+    <link rel="apple-touch-icon" sizes="192x192" href__="./icon-192.svg" />
+    <link rel="apple-touch-icon" sizes="512x512" href__="./icon-512.svg" />
+    <link rel="manifest" href__="./manifest.json" />
     <title>MeshLink</title>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    <!-- Register Service Worker -->
+    <script type="module" src="./main.jsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
@@ -48,4 +30,4 @@
       }
     </script>
   </body>
-</html
+</html>
